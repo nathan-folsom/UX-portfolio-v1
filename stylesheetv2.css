@@ -33,7 +33,7 @@ body {
   background-attachment: fixed;
   margin: 0 auto;
   text-align: center;
-  color: #3D3D3D;
+  color: #333;
   font-family: 'Noto Sans TC', sans-serif;
 }
 /* HEADINGS */
@@ -49,7 +49,8 @@ h2 {
 /* TEXT STYLES */
 a {
   text-decoration: none;
-  color: #3d3d3d;
+  color: #4d4d4d;
+  fill: #4d4d4d;
 }
 .no-background a {
   color: #fff;
@@ -103,18 +104,6 @@ p {
   }
 
 /***2.0 - HEADER***/
-/* HEADER GENERAL */
-header {
-  width: 100%;
-  height: 100px;
-  position: fixed;
-  background-color: rgba(255,255,255, 1);
-  top: 0px;
-  z-index: 1;
-  border-bottom: 10px black solid;
-  border-top: 10px black solid;
-}
-
 /* NAV */
 .nav {
   font-size: 24px;
@@ -134,7 +123,6 @@ header {
     margin: 10px auto;
   }
 .navButtons a {
-    color: #3d3d3d;
     transition: opacity .1s ease-in;
   }
 .navButtons .nav {
@@ -196,16 +184,16 @@ header {
 
 /* LOAD-IN ANIMATIONS */
 .nav.left {
-  animation: .5s ease-in .9s forwards uxFadeIn;
+  animation: .5s ease-in .9s forwards fade-in;
 }
 .nav.right {
-  animation: .5s ease-in 1.2s forwards uxFadeIn;
+  animation: .5s ease-in 1.2s forwards fade-in;
 }
 @keyframes loadGrow {
   0% { r: 5%; }
   100% { r: 125; }
 }
-@keyframes uxFadeIn {
+@keyframes fade-in {
   0% {opacity: 0; }
   100% {opacity: 1; }
 }
@@ -442,21 +430,7 @@ header {
   .two-col-right {
     grid-area: 4/2/5/2;
   }
-  .three-col svg defs rect {
-    fill: #000;
-  }
-  .three-col svg defs circle {
-    fill: #fff;
-  }
-  .three-col svg a {
-    fill: #3d3d3d;
-  }
-  .three-col-1 svg defs circle, .three-col-1 svg a {
-    transform: translateX(-3px);
-  }
-  .three-col-3 svg defs circle, .three-col-3 svg a {
-    transform: translateX(3px);
-  }
+
   .intro-text {
     font-size: 35px;
   }
