@@ -49,7 +49,11 @@ h2 {
 /* TEXT STYLES */
 a {
   text-decoration: none;
-  color: black;
+  color: #3d3d3d;
+}
+.no-background a {
+  color: #fff;
+  fill: #fff;
 }
 p {
   font-size: 25px;
@@ -151,8 +155,8 @@ header {
 }
 .nav-m input {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0;
+  right: 0;
   width: 50px;
   height: 50px;
   opacity: 0;
@@ -340,6 +344,18 @@ header {
   .grid {
     display: grid;
   }
+  .three-col {
+    grid-template: 1fr / 1fr 1fr 1fr;
+  }
+  .three-col-1 {
+    grid-area: 2/1/3/2;
+  }
+  .three-col-2 {
+    grid-area: 2/2/3/3;
+  }
+  .three-col-3 {
+    grid-area: 2/3/3/4;
+  }
   .two-col {
     grid-template: 125px 1fr 125px / 1fr 2fr 1fr 2fr 1fr;
   }
@@ -368,7 +384,7 @@ header {
     width: 96%;
     padding: 0 2%;
   }
-  .transparent {
+  .no-background {
     color: #fff;
   }
   .background {
@@ -402,17 +418,44 @@ header {
     transition: none;
     filter: grayscale(0);
   }
+  .three-col {
+    grid-template: 1fr 1fr 1fr / 5% 1fr 5%;
+  }
   .two-col {
     grid-template: 75px 1fr 75px 1fr 75px / 1fr 5fr 1fr;
   }
   .one-col {
     grid-template: 75px 1fr 75px / 1fr 5fr 1fr;
   }
+  .three-col-1 {
+    grid-area: 1/2/2/3;
+  }
+  .three-col-2 {
+    grid-area: 2/2/3/3;
+  }
+  .three-col-3 {
+    grid-area: 3/2/4/3;
+  }
   .two-col-left {
     grid-area: 2/2/2/2;
   }
   .two-col-right {
     grid-area: 4/2/5/2;
+  }
+  .three-col svg defs rect {
+    fill: #000;
+  }
+  .three-col svg defs circle {
+    fill: #fff;
+  }
+  .three-col svg a {
+    fill: #3d3d3d;
+  }
+  .three-col-1 svg defs circle, .three-col-1 svg a {
+    transform: translateX(-3px);
+  }
+  .three-col-3 svg defs circle, .three-col-3 svg a {
+    transform: translateX(3px);
   }
   .intro-text {
     font-size: 35px;
