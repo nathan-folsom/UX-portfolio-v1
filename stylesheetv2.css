@@ -419,7 +419,7 @@ header {
     filter: grayscale(0);
   }
   .three-col {
-    grid-template: 1fr 1fr 1fr / 5% 1fr 5%;
+    grid-template: 1fr 1fr 1fr / 15% 1fr 15%;
   }
   .two-col {
     grid-template: 75px 1fr 75px 1fr 75px / 1fr 5fr 1fr;

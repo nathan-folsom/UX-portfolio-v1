@@ -56,63 +56,6 @@ rel="stylesheet">
   mask: url(#shape-mask);
 }
 
-/* LOAD-IN ANIMATIONS */
-.nav.left {
-  animation: .5s ease-in .9s forwards uxFadeIn;
-}
-.nav.right {
-  animation: .5s ease-in 1.2s forwards uxFadeIn;
-}
-@keyframes loadGrow {
-  0% { r: 5%; }
-  100% { r: 125; }
-}
-@keyframes uxFadeIn {
-  0% {opacity: 0; }
-  100% {opacity: 1; }
-}
-
-
-/* MEDIA QUERY BREAKPOINTS */
-@media only screen and (max-width: 500px) {
-  #headerRect {
-    mask: url(#shape-mask-m);
-  }
-  .headerSvg {
-    margin-top: 0;
-  }
-  .grayscale {
-    transition: none;
-    filter: grayscale(0);
-  }
-  .two-col {
-    grid-template: 75px 1fr 75px 1fr 75px / 1fr 5fr 1fr;
-  }
-  .one-col {
-    grid-template: 75px 1fr 75px / 1fr 5fr 1fr;
-  }
-  .two-col-left {
-    grid-area: 2/2/2/2;
-  }
-  .two-col-right {
-    grid-area: 4/2/5/2;
-  }
-  .intro-text {
-    font-size: 35px;
-  }
-  .inner:nth-child(2), .nfd {
-    transform: translate(-200px, 75px) scale(1.5) ;
-  }
-  .nav-m {
-    visibility: visible;
-  }
-  .left.nav, .right.nav {
-    visibility: hidden;
-  }
-  .money-shot-desktop {
-    margin: 0;
-  }
-}
 
 </style>
 </head>
