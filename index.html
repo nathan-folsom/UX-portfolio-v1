@@ -24,16 +24,20 @@ rel="stylesheet">
       <a href="about.html"> <h2 class="left nav">ABOUT</h2></a>
       <a href="contact.html"> <h2 class="right nav">CONTACT</h2></a>
     </div>
-      <div class="nav-m right">
+      <div class="nav-m full-width">
         <input type="checkbox"/>
         <label for="checkbox">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120 100">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 700 120">
         <defs>
-
+          <mask id="mobile-header-mask">
+            <rect x="0" y="0" width="700" height="120" fill="#fff"/>
+          </mask>
         </defs>
-        <rect x="0" y="0" width="120" height="100" fill="#fff"/>
-        <path class="open"  d="M 20 20 l 80 0 m 0 30 l -80 0 m 0 30 l 80 0"/>
-        <path class="close" d="M 130 20 l 60 60 m 0 -60 l -60 60"/>
+        <rect x="0" y="0" width="700" height="120" fill="#fff" mask="url(#mobile-header-mask)"/>
+        <path class="open"  d="M 600 30 l 80 0 m 0 30 l -80 0 m 0 30 l 80 0"/>
+        <path class="close" d="M 710 30 l 60 60 m 0 -60 l -60 60"/>
+        <text x="100" y="50" font-size="30px" letter-spacing="10" fill="#4d4d4d">NATE FOLSOM</text>
+        <text x="100" y="100" font-size="30px" letter-spacing="10" fill="#4d4d4d">DESIGN</text>
       </svg>
       <div class="menu-foldout">
       <a href="About.html"> <h2 class="nav">ABOUT</h2></a>
@@ -43,7 +47,7 @@ rel="stylesheet">
     </label>
   </div>
     </div>
-    <svg class="full-width" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600">
+    <svg class="full-width header-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600">
       <defs>
           <!-- MASK -->
           <mask id="shape-mask">
@@ -193,7 +197,7 @@ rel="stylesheet">
   </div>
 
 <footer>
-  <svg class="full-width" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 100">
+  <svg class="full-width footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 100">
     <defs>
       <mask id="shape-mask-footer">
         <rect x="0" y="0" width="800" height="100" fill="#fff"/>
