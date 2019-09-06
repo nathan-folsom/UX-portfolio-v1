@@ -368,7 +368,7 @@ p {
   .full-width {
   width: 100%;
   }
-  .withMargins {
+  .with-margins {
     width: 96%;
     padding: 0 2%;
   }
@@ -379,7 +379,7 @@ p {
     background-color: #fff;
     color: #3d3d3d;
   }
-  .mainContainer {
+  .main-container {
     min-height: 100vh;
     width: 100%;
     display: -webkit-box;
@@ -394,13 +394,53 @@ p {
     flex: 1 1 auto;
   }
 
-/***6.0 - MEDIA QUERIES***/
-@media only screen and (max-width: 500px){
-  #headerRect {
-    mask: url(#shape-mask-m);
+/***6.0 - PAGE-SPECIFIC STYLING ***/
+  /* LANDING PAGE */
+  .money-shot {
+    margin: -50px auto;
   }
-  .headerSvg {
-    margin-top: 0;
+  .money-shot-desktop{
+    margin: -50px auto 0;
+  }
+  .grayscale {
+    filter: grayscale(100%);
+    transition: filter .2s ease-out;
+  }
+  .grayscale:hover {
+    filter: grayscale(0);
+  }
+  .intro-text {
+    fill: white;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .inner:nth-child(2) {
+    animation: .3s ease-out .4s forwards loadGrow;
+  }
+  .inner:nth-child(3) {
+    animation: .2s ease-in .7s forwards fade-in;
+  }
+  .inner:nth-child(4) {
+    animation: .2s ease-in .85s forwards fade-in;
+  }
+  .inner:nth-child(5) {
+    animation: .2s ease-in .95s forwards fade-in;
+  }
+  .inner:nth-child(6) {
+    animation: .2s ease-in 1s forwards fade-in;
+  }
+  .inner:nth-child(n+3){
+    opacity: 0;
+  }
+  #header-rect {
+    mask: url(#shape-mask);
+  }
+
+
+/***7.0 - MEDIA QUERIES***/
+@media only screen and (max-width: 500px){
+  #header-rect {
+    mask: url(#shape-mask-m);
   }
   .grayscale {
     transition: none;
@@ -430,7 +470,6 @@ p {
   .two-col-right {
     grid-area: 4/2/5/2;
   }
-
   .intro-text {
     font-size: 35px;
   }

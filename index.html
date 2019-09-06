@@ -10,63 +10,16 @@ rel="stylesheet">
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 <style>
 
-
-.money-shot {
-  margin: -50px auto;
-}
-.money-shot-desktop{
-  margin: -50px auto 0;
-}
-.grayscale {
-  filter: grayscale(100%);
-  transition: filter .2s ease-out;
-}
-.grayscale:hover {
-  filter: grayscale(0);
-}
-.intro-text {
-  fill: white;
-  font-size: 25px;
-  font-weight: 700;
-}
-.inner:nth-child(2) {
-  animation: .3s ease-out .4s forwards loadGrow;
-}
-.inner:nth-child(3) {
-  animation: .2s ease-in .7s forwards fade-in;
-}
-.inner:nth-child(4) {
-  animation: .2s ease-in .85s forwards fade-in;
-}
-.inner:nth-child(5) {
-  animation: .2s ease-in .95s forwards fade-in;
-}
-.inner:nth-child(6) {
-  animation: .2s ease-in 1s forwards fade-in;
-}
-.inner:nth-child(n+3){
-  opacity: 0;
-}
-#uxTitle {
-  animation: .7s ease-in 1.2s forwards fade-in;
-  opacity: 0;
-  font-size: 80px;
-}
-#headerRect {
-  mask: url(#shape-mask);
-}
-
-
 </style>
 </head>
 
 <body>
 
-<div class="mainContainer">
+<div class="main-container">
 
 <!-- HEADER -->
   <div class="full-width">
-    <div class="button top-layer full-width withMargins">
+    <div class="button top-layer full-width with-margins">
     <div class="navButtons">
       <a href="about.html"> <h2 class="left nav">ABOUT</h2></a>
       <a href="contact.html"> <h2 class="right nav">CONTACT</h2></a>
@@ -116,7 +69,7 @@ rel="stylesheet">
           </style>
       </defs>
       <!-- SVG SHAPES -->
-      <rect id="headerRect" x="0" y="0" width="800" height="600" fill="white"/>
+      <rect id="header-rect" x="0" y="0" width="800" height="600" fill="white"/>
         <!-- SCROLL DOWN ARROW -
       <a xlink:href="#intro">
       <path class="arrow" d="M 380 500 l 20 10 l 20 -10" stroke-width="5" fill="#fff" stroke="#000" stroke-linecap="round" opacity="0"/>
