@@ -147,7 +147,7 @@ p {
   right: 0;
   width: 70px;
   height: 60px;
-  opacity: .5;
+  opacity: 0;
 }
 .open, .close {
   stroke-width: 5;
