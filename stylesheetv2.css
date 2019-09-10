@@ -27,14 +27,16 @@ html {
 }
 /* BODY */
 body {
-  background-image: url("siteBackgroundv2.png");
-  background-size: contain;
-  background-color: #333;
-  background-attachment: fixed;
+  background-color: #4d4d4d;
   margin: 0 auto;
   text-align: center;
   color: #333;
   font-family: 'Noto Sans TC', sans-serif;
+}
+.main-background {
+  /*background-image: url("siteBackgroundv2.png");
+  background-size: contain;
+  background-attachment: fixed;*/
 }
 /* HEADINGS */
 h1 {
@@ -52,12 +54,15 @@ a {
   color: #4d4d4d;
   fill: #4d4d4d;
 }
-.no-background a {
+.no-background a, .no-background p {
   color: #fff;
   fill: #fff;
 }
 p {
-  font-size: 25px;
+  font-size: 16px;
+}
+.text-left {
+  text-align: left;
 }
 /* SPECIAL TEXT */
 .emph {
@@ -112,7 +117,6 @@ p {
 }
 
 .left.nav, .right.nav {
-    background-color: #fff;
     padding-left: 5px;
   }
 .button {
@@ -152,22 +156,18 @@ p {
 .open, .close {
   stroke-width: 5;
   stroke-linecap: round;
-  stroke: #3d3d3d;
+  stroke: #4d4d4d;
   transition: transform .2s ease;
 }
 .menu-foldout {
   position: absolute;
   top: 2px;
   right: -10px;
-  background-color: #fff;
   width: 200px;
   z-index: -1;
   padding-top: 40px;
   margin-right: -210px;
   transition: margin-right .2s ease;
-}
-.menu-foldout a {
-  color: #3d3d3d;
 }
 .nav-m input:checked ~ label .open {
   transform: translateX(120px);
@@ -180,6 +180,9 @@ p {
 }
 .top-layer {
   z-index: 2;
+}
+.mobile-header-pen {
+  fill: #4d4d4d;
 }
 
 /* LOAD-IN ANIMATIONS */
@@ -329,10 +332,13 @@ p {
   }
 
   /* GRID FORMATTING */
-  .grid {
-    display: grid;
-  }
+.align-center {
+  align-items: center;
+}
+  /* THREE-COLUMN GRID */
   .three-col {
+    display: grid;
+    margin: 50px 0;
     grid-template: 1fr / 1fr 1fr 1fr;
   }
   .three-col-1 {
@@ -344,19 +350,33 @@ p {
   .three-col-3 {
     grid-area: 2/3/3/4;
   }
+  .three-col-1-2 {
+    grid-area: 2/1/3/3;
+    margin-right: 5%;
+  }
+  .three-col-1-2-3 {
+    grid-area: 2/1/3/4;
+  }
+  /* TWO COLUMN GRID */
   .two-col {
+    display: grid;
     grid-template: 125px 1fr 125px / 1fr 2fr 1fr 2fr 1fr;
   }
-  .two-col-left {
+  .two-col-1 {
     grid-area: 2/2/3/3;
   }
-  .two-col-right {
+  .two-col-2 {
     grid-area: 2/4/3/5;
   }
+  .two-col-1-2 {
+    grid-area: 2/2/3/5;
+  }
+  /* ONE COLUMN GRID */
   .one-col {
+    display: grid;
     grid-template: 125px 1fr 125px / 1fr 5fr 1fr;
   }
-  .one-col-col {
+  .one-col-1 {
     grid-area: 2/2/2/2;
   }
 
@@ -368,16 +388,20 @@ p {
   .full-width {
   width: 100%;
   }
-  .with-margins {
+  .margins {
     width: 96%;
     padding: 0 2%;
+  }
+  .margins-large {
+    width: 80%;
+    padding: 0 10%;
   }
   .no-background {
     color: #fff;
   }
   .background {
     background-color: #fff;
-    color: #3d3d3d;
+    color: #4d4d4d;
   }
   .main-container {
     min-height: 100vh;
@@ -389,6 +413,9 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .under-header-spacer-m {
+    height: 0;
   }
   .bottom-spacer {
     flex: 1 1 auto;
@@ -435,29 +462,53 @@ p {
   #header-rect {
     mask: url(#shape-mask);
   }
+  #pen .stroked  {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 3.52px;
+  }
+
+  #pen .filled {
+    fill: #fff;
+    stroke: none;
+  }
 
 
 /***7.0 - MEDIA QUERIES***/
 @media only screen and (max-width: 500px){
+  #pen, .nfd {
+    opacity: 0;
+  }
+  #pen-m {
+    opacity: 0;
+  }
   #header-rect {
     mask: url(#shape-mask-m);
   }
   .header-svg {
-    visibility: hidden;
-    margin-top: -200px;
+    /*margin: -150px 0 -80px;*/
+    margin-bottom: -290px;
   }
   .grayscale {
     transition: none;
     filter: grayscale(0);
   }
-  .three-col {
-    grid-template: 1fr 1fr 1fr / 15% 1fr 15%;
-  }
   .two-col {
     grid-template: 75px 1fr 75px 1fr 75px / 1fr 5fr 1fr;
   }
+  .two-col.bio {
+    grid-template: 75px 1fr 0 2fr 25px / 1fr 5fr 1fr;
+  }
   .one-col {
     grid-template: 75px 1fr 75px / 1fr 5fr 1fr;
+  }
+
+  /* THREE-COLUMN GRID FORMATTING */
+  .three-col {
+    margin: 0;
+    grid-template: 1fr 1fr 1fr / 15% 1fr 15%;
   }
   .three-col-1 {
     grid-area: 1/2/2/3;
@@ -468,10 +519,10 @@ p {
   .three-col-3 {
     grid-area: 3/2/4/3;
   }
-  .two-col-left {
+  .two-col-2 {
     grid-area: 2/2/2/2;
   }
-  .two-col-right {
+  .two-col-1 {
     grid-area: 4/2/5/2;
   }
   .intro-text {
@@ -488,6 +539,12 @@ p {
   }
   .money-shot-desktop {
     margin: 0;
+  }
+  svg {
+    margin-top: -1px;
+  }
+  .under-header-spacer-m {
+    height: 62px;
   }
   }
 

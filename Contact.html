@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>Contact – Nate Folsom</title>
-<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="faviconv2.png" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700"
 rel="stylesheet">
 <link href="stylesheetv2.css" rel="stylesheet">
@@ -41,34 +41,100 @@ rel="stylesheet">
 <body>
 <div class="main-container">
   <div class="container">
-    <div class="button top-layer container with-margins">
+    <div class="button top-layer container margins">
     <div class="navButtons">
-      <a href="About.html"> <h2 class="left nav">ABOUT</h2></a>
-      <a href="index.html"> <h2 class="right nav">WORK</h2></a>
+      <a href="About.html"> <h2 class="left nav background">ABOUT</h2></a>
+      <a href="index.html"> <h2 class="right nav background">WORK</h2></a>
     </div>
-      <div class="nav-m right inline">
-        <input type="checkbox"/>
-        <label for="checkbox">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120 100">
+    <!-- MOBILE NAV -->
+    <div class="nav-m full-width">
+      <input type="checkbox"/>
+      <label for="checkbox">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 700 120">
+      <defs>
+      </defs>
+      <rect x="0" y="0" width="700" height="120" fill="#fff" mask="url(#mobile-header-mask)"/>
+      <path class="open"  d="M 600 30 l 80 0 m 0 30 l -80 0 m 0 30 l 80 0"/>
+      <path class="close" d="M 710 30 l 60 60 m 0 -60 l -60 60"/>
+      <text x="23" y="47" font-size="30px" letter-spacing="10" fill="#4d4d4d">NATE FOLSOM</text>
+      <text x="23" y="96" font-size="30px" letter-spacing="10" fill="#4d4d4d">DESIGN</text>
+      <g>
+          <rect class="mobile-header-pen" x="316.04" y="80.63" width="3.88" height="2.15" rx="0.6"/>
+          <path class="mobile-header-pen" d="M258.23,94.65H222.91a1.59,1.59,0,0,1-1.75-1.33V91.17a1.43,1.43,0,0,1,2.75,0v1.38h31.81a1.5,1.5,0,0,1,1.14-.46,1.25,1.25,0,0,1,1.37,1Z"/>
+          <path class="mobile-header-pen" d="M295.65,77.2h5.59a1.27,1.27,0,0,1,1.4,1.07v1.64H313a.66.66,0,0,1,.73.56v2.47a.66.66,0,0,1-.73.56H302.64v1.65a1.27,1.27,0,0,1-1.4,1.06h-5.59Z"/>
+          <rect class="mobile-header-pen" x="221.25" y="75.3" width="71.87" height="12.81" rx="1.21"/>
+          <path class="mobile-header-pen" d="M207.71,73.73h6.6a1.18,1.18,0,0,1,1.18,1.18V89.68a0,0,0,0,1,0,0h-9a0,0,0,0,1,0,0V74.91A1.18,1.18,0,0,1,207.71,73.73Z" transform="translate(129.3 292.72) rotate(-90)"/>
+      </g>
+    </svg>
+    <div class="menu-foldout background">
+    <a href="About.html"> <h2 class="nav">ABOUT</h2></a>
+    <a href="Contact.html"> <h2 class="nav">CONTACT</h2></a>
+    <a href="index.html"> <h2 class="nav">WORK</h2></a>
+  </div>
+  </label>
+</div>
+    </div>
+  </div>
+  <div class="under-header-spacer-m">
+  </div>
+  <div class="full-width one-col background">
+    <div class="one-col-1">
+      <h1>Let's work together!</h1>
+    </div>
+  </div>
+  <div class="full-width three-col no-background">
+    <div class="three-col-1">
+      <h2>Send me an</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
         <defs>
-
+          <mask id="contact-mask-1">
+            <rect x="0" y="0" width="100" height="100" />
+            <circle cx="50" cy="50" fill="#fff" />
+            </mask>
         </defs>
-        <rect x="0" y="0" width="120" height="100" fill="#fff"/>
-        <path class="open"  d="M 20 20 l 80 0 m 0 30 l -80 0 m 0 30 l 80 0"/>
-        <path class="close" d="M 130 20 l 60 60 m 0 -60 l -60 60"/>
+        <rect x="0" y="0" width="100" height="100" fill="#fff" mask="url(#contact-mask-1)"/>
+        <a xlink:href="mailto:n8folsom@gmail.com" href="mailto:n8folsom@gmail.com" target="_blank">
+        <text x="50" y="54" text-anchor="middle" fill="#4d4d4d">email</text>
+        <circle cx="50" cy="50" opacity="0" />
+        </a>
       </svg>
-      <div class="menu-foldout">
-      <a href="About.html"> <h2 class="nav">ABOUT</h2></a>
-      <a href="Contact.html"> <h2 class="nav">CONTACT</h2></a>
-      <a href="index.html"> <h2 class="nav">WORK</h2></a>
     </div>
-    </label>
-  </div>
+    <div class="three-col-2">
+      <h2>Look at my</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+        <defs>
+          <mask id="contact-mask-2">
+            <rect x="0" y="0" width="100" height="100" />
+            <circle cx="50" cy="50" fill="#fff" />
+            </mask>
+        </defs>
+        <rect x="0" y="0" width="100" height="100" fill="#fff" mask="url(#contact-mask-2)"/>
+        <a xlink:href="https://www.linkedin.com/in/nate-folsom-seattle/" href="https://www.linkedin.com/in/nate-folsom-seattle/" target="_blank">
+          <text x="50" y="54" text-anchor="middle" fill="#4d4d4d">linkedin</text>
+          <circle cx="50" cy="50" opacity="0" />
+        </a>
+      </svg>
+    </div>
+    <div class="three-col-3">
+      <h2>Read my</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+        <defs>
+          <mask id="contact-mask-3">
+            <rect x="0" y="0" width="100" height="100" />
+            <circle cx="50" cy="50"  fill="#fff" />
+          </mask>
+        </defs>
+        <rect x="0" y="0" width="100" height="100" fill="#fff" mask="url(#contact-mask-3)"/>
+        <a xlink:href="NateFolsomResumeUX.pdf" href="NateFolsomResumeUX.pdf" target="_blank">
+        <text x="50" y="49" text-anchor="middle" fill="#4d4d4d" >resume</text>
+        <text x="50" y="61" font-size="10" text-anchor="middle" fill="#4d4d4d">(59kb pdf)</text>
+        <circle cx="50" cy="50"  opacity="0" />
+        </a>
+      </svg>
     </div>
   </div>
-  <div class="bottom-spacer">
-  </div>
-  <div class="three-col grid full-width">
+  <!--
+  <div class="three-col full-width">
     <div class="three-col-1">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
         <defs>
@@ -112,7 +178,7 @@ rel="stylesheet">
         </a>
       </svg>
     </div>
-  </div>
+  </div>-->
 <div class="bottom-spacer">
 </div>
 <footer>
