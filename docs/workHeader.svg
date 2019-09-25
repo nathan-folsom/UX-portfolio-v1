@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600">
+    <style>
+      .n {
+        fill: #fff;
+      }
+
+      .o {
+        font-size: 30.86px;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .p {
+        font-size: 40px;
+        font-family: HelveticaNeue-Bold, Helvetica Neue;
+        font-weight: 700;
+      }
+    </style>
+  <title>Portfolio Graphics</title>
+  <g>
+    <path class="n" d="M0,0V600H800V0ZM400,452.48A152.48,152.48,0,1,1,552.48,300,152.48,152.48,0,0,1,400,452.48Z"/>
+    <text class="o" transform="matrix(0.66, 0.75, -0.75, 0.66, 256.53, 412)">U</text>
+    <text class="o" transform="translate(272.52 429.76) rotate(41.54)">X</text>
+    <text class="o" transform="matrix(0.8, 0.6, -0.6, 0.8, 287.61, 442.79)"> </text>
+    <text class="o" transform="matrix(0.85, 0.53, -0.53, 0.85, 295.28, 448.86)">D</text>
+    <text class="o" transform="translate(315.18 460.9) rotate(25.23)">e</text>
+    <text class="o" transform="translate(331.32 468.41) rotate(19.76)">s</text>
+    <text class="o" transform="translate(346.74 473.76) rotate(15.93)">i</text>
+    <text class="o" transform="translate(354.23 476.07) rotate(11.72)">g</text>
+    <text class="o" transform="translate(372.93 479.86) rotate(5.79)">n</text>
+    <text class="o" transform="translate(391.53 481.53) rotate(0.93)">e</text>
+    <text class="o" transform="translate(408.93 481.52) rotate(-4.37)">r</text>
+    <text class="o" transform="translate(419.91 480.63) rotate(-7.57)"> </text>
+    <text class="o" transform="translate(430.07 479.85) rotate(-14.31)">—</text>
+    <text class="o" transform="translate(461.28 471.12) rotate(-21.07)"> </text>
+    <text class="o" transform="matrix(0.9, -0.44, 0.44, 0.9, 470.45, 467.8)">S</text>
+    <text class="o" transform="translate(489.63 458.26) rotate(-32.19)">e</text>
+    <text class="o" transform="translate(504.72 448.69) rotate(-37.81)">a</text>
+    <text class="o" transform="matrix(0.74, -0.67, 0.67, 0.74, 518.52, 437.76)">t</text>
+    <text class="o" transform="translate(526.27 430.69) rotate(-45.54)">t</text>
+    <text class="o" transform="translate(533.49 423.26) rotate(-48.34)">l</text>
+    <text class="o" transform="translate(538.75 417.56) rotate(-52.3)">e</text>
+    <text class="p" transform="matrix(0.74, -0.68, 0.68, 0.74, 281.99, 193.31)">N</text>
+    <text class="p" transform="matrix(0.85, -0.53, 0.53, 0.85, 305.77, 172.14)">a</text>
+    <text class="p" transform="matrix(0.91, -0.42, 0.42, 0.91, 327.54, 158.93)">t</text>
+    <text class="p" transform="translate(342.59 151.87) rotate(-17.02)">e</text>
+    <text class="p" transform="translate(367.12 144.91) rotate(-9.89)"> </text>
+    <text class="p" transform="matrix(1, -0.08, 0.08, 1, 380.86, 142.64)"> </text>
+    <text class="p" transform="matrix(1, 0.04, -0.04, 1, 394.53, 141.25)">F</text>
+    <text class="p" transform="matrix(0.98, 0.2, -0.2, 0.98, 420.53, 142.44)">o</text>
+    <text class="p" transform="translate(446.79 148.53) rotate(19.03)">l</text>
+    <text class="p" transform="translate(459.11 152.6) rotate(25.77)">s</text>
+    <text class="p" transform="translate(480.53 163.02) rotate(34.91)">o</text>
+    <text class="p" transform="translate(502.57 177.94) rotate(46.56)">m</text>
+  </g>
+</svg>

@@ -3,234 +3,95 @@
 <html>
 <head>
 <title>Nate Folsom — UX Portfolio</title>
-<link rel="shortcut icon" href="faviconv2.png" type="image/x-icon">
+<link rel="shortcut icon" href="P5_Favicon.png" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700"
 rel="stylesheet">
-<link href="stylesheetv2.css" rel="stylesheet">
-<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="docs/stylesheet1.css" rel="stylesheet">
 <style>
-
+.textBox {
+  z-index: 0;
+  float: left;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.description {
+  font-size: 32px;
+  padding-left: 20px;
+}
+.projImg {
+  margin-top: -20px;
+  max-width: 2300px;
+  margin-left: -35px;
+}
+.Content:hover {
+  margin: 10px 0 10px 0;
+}
+.Content {
+  cursor: pointer;
+}
 </style>
 </head>
 
 <body>
 
-<div class="main-container main-background">
+<header id="myHeader">
+</header>
 
-<!-- HEADER -->
-  <div class="full-width">
-    <div class="button top-layer full-width margins">
-    <div class="navButtons">
-      <a href="About.html"> <h2 class="left nav background">ABOUT</h2></a>
-      <a href="Contact.html"> <h2 class="right nav background">CONTACT</h2></a>
-    </div>
-    <!-- MOBILE NAV -->
-      <div class="nav-m full-width">
-        <input type="checkbox"/>
-        <label for="checkbox">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 700 120">
-        <defs>
-        </defs>
-        <rect x="0" y="0" width="700" height="120" fill="#fff" mask="url(#mobile-header-mask)"/>
-        <path class="open"  d="M 600 30 l 80 0 m 0 30 l -80 0 m 0 30 l 80 0"/>
-        <path class="close" d="M 710 30 l 60 60 m 0 -60 l -60 60"/>
-        <text x="23" y="47" font-size="30px" letter-spacing="10" fill="#4d4d4d">NATE FOLSOM</text>
-        <text x="23" y="96" font-size="30px" letter-spacing="10" fill="#4d4d4d">DESIGN</text>
-        <g>
-            <rect class="mobile-header-pen" x="316.04" y="80.63" width="3.88" height="2.15" rx="0.6"/>
-            <path class="mobile-header-pen" d="M258.23,94.65H222.91a1.59,1.59,0,0,1-1.75-1.33V91.17a1.43,1.43,0,0,1,2.75,0v1.38h31.81a1.5,1.5,0,0,1,1.14-.46,1.25,1.25,0,0,1,1.37,1Z"/>
-            <path class="mobile-header-pen" d="M295.65,77.2h5.59a1.27,1.27,0,0,1,1.4,1.07v1.64H313a.66.66,0,0,1,.73.56v2.47a.66.66,0,0,1-.73.56H302.64v1.65a1.27,1.27,0,0,1-1.4,1.06h-5.59Z"/>
-            <rect class="mobile-header-pen" x="221.25" y="75.3" width="71.87" height="12.81" rx="1.21"/>
-            <path class="mobile-header-pen" d="M207.71,73.73h6.6a1.18,1.18,0,0,1,1.18,1.18V89.68a0,0,0,0,1,0,0h-9a0,0,0,0,1,0,0V74.91A1.18,1.18,0,0,1,207.71,73.73Z" transform="translate(129.3 292.72) rotate(-90)"/>
-        </g>
-      </svg>
-      <div class="menu-foldout background">
-      <a href="About.html"> <h2 class="nav">ABOUT</h2></a>
-      <a href="Contact.html"> <h2 class="nav">CONTACT</h2></a>
-      <a href="#workStart"> <h2 class="nav">WORK</h2></a>
-    </div>
-    </label>
-  </div>
-    </div>
-    <svg class="full-width header-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600">
-      <defs>
-          <!-- MASK -->
-          <mask id="shape-mask">
-            <rect id="outer" x="0" y="0" width="800" height="600" fill="white"/>
-            <circle class="inner" cx="400" cy="150" />
-            <circle class="inner" cx="400" cy="337.7" r="37.1" />
-            <circle class="inner" cx="400" cy="420.9" r="21.1" />
-            <circle class="inner" cx="400" cy="480.2" r="13.2" />
-            <circle class="inner" cx="400" cy="527.9" r="9.5" />
-            <circle class="inner" cx="400" cy="571.8" r="7.8" />
-          </mask>
-          <!-- MOBILE MASK -->
-          <mask id="shape-mask-m">
-            <rect id="outer" x="0" y="0" width="800" height="600" fill="#000"/>
-
-          </mask>
-          <!-- CIRCULAR TEXT PATH -->
-          <path id="textCircle" d="M 275 150
-          a 125, 125 0 1, 1 250, 0
-          a 125, 125 0 1, 1 -250, 0" transform="rotate(30 400 150)"
-          />
-          <style>
-          </style>
-      </defs>
-      <!-- SVG SHAPES -->
-      <rect id="header-rect" x="0" y="0" width="800" height="600" fill="white"/>
-        <!-- SCROLL DOWN ARROW -
-      <a xlink:href="#intro">
-      <path class="arrow" d="M 380 500 l 20 10 l 20 -10" stroke-width="5" fill="#fff" stroke="#000" stroke-linecap="round" opacity="0"/>
-    </a>-->
-      <text class="nfd" dy="40" textLength="880" fill="white" font-size="30" letter-spacing="20" font-weight="700">
-        <textPath  xlink:href="#textCircle" >NATE FOLSOM <tspan dx="30">DESIGN</tspan>
-        </textPath>
-      </text>
-      <g id="pen">
-          <rect class="filled" x="398.8" y="220.8" width="3.61" height="4.98" rx="0.88"/>
-          <path class="stroked" d="M384.74,100.76h-3.6a.48.48,0,0,0-.48.48v43.58h.78"/>
-          <path class="filled" d="M408.16,194.63v7.18a1.79,1.79,0,0,1-1.79,1.78h-2.76v13.34a.94.94,0,0,1-.94.94h-4.13a.94.94,0,0,1-.94-.94V203.59h-2.76a1.79,1.79,0,0,1-1.79-1.78v-7.18Z"/>
-          <rect class="filled" x="389.87" y="99.1" width="21.47" height="92.27" rx="1.77"/>
-          <path class="filled" d="M394.82,75.72h11.56a1.73,1.73,0,0,1,1.73,1.73V96.2a0,0,0,0,1,0,0h-15a0,0,0,0,1,0,0V77.45A1.73,1.73,0,0,1,394.82,75.72Z"/>
-      </g>
-      <g id="pen-m" opacity="0">
-          <rect class="filled" x="533.47" y="554.56" width="9.49" height="6.87" rx="1.67"/>
-          <path class="stroked" d="M304.74,588.23v6.85a.92.92,0,0,0,.92.92h83v-1.49"/>
-          <path class="filled" d="M483.6,543.61h13.67a3.4,3.4,0,0,1,3.41,3.4v5.26h25.41a1.8,1.8,0,0,1,1.8,1.79v7.88a1.8,1.8,0,0,1-1.8,1.79H500.68V569a3.4,3.4,0,0,1-3.41,3.41H483.6Z"/>
-          <rect class="filled" x="301.59" y="537.55" width="175.8" height="40.91" rx="3.38"/>
-          <path class="filled" d="M265.54,538.49h22a3.29,3.29,0,0,1,3.29,3.29v35.73a0,0,0,0,1,0,0H262.24a0,0,0,0,1,0,0V541.78A3.29,3.29,0,0,1,265.54,538.49Z" transform="translate(-281.45 834.55) rotate(-90)"/>
-      </g>
-    </svg>
+<div class="mainContainer">
+  <div class="spacerTop">
   </div>
 
-<!-- INTRO SECTION -->
-<div id="intro" class="full-width no-background one-col">
-  <h1 class="one-col-1">I am a Seattle based product designer. I am passionate about the design, technology, and methodologies that go into building great experiences.
-  </h1>
-<!--
-  <svg class="full-width" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 350">
-    <defs>
-      <style>
-        </style>
-      </defs>
-    <!- SVG SHAPES ->
+<div class="contentContainer">
 
-    <!- Text ->
-    <text class="intro-text" x="400" y="80" text-anchor="middle">I am a Seattle based product designer</text>
-    <text class="intro-text" x="400" y="160" text-anchor="middle">I am passionate about the design, technology, and</text>
-    <text class="intro-text" x="400" y="200" text-anchor="middle">methodologies that go into building great experiences. </text>
-  </svg>-->
+<!-- NEUFARMS -->
+<a href="NeuFarms">
+<div class="Content">
+  <div class="textBox">
+    <h1>NeuFarms<span class="description">Mobile App Visuals</span></h1>
+  </div>
+    <img class="contentImgF projImg" src="home/NeuFarms.png"/>
 </div>
+</a>
 
-<!-- FIRST CASE STUDY BLOCK -->
-<div id="workStart" class="full-width background two-col">
-    <!--NeuFarms-->
-  <div class="grayscale two-col-1"><a href="NeuFarms.html"><img class="contentImg money-shot" src="home/NeuFarms v2.png"/>
-    <h1 >NeuFarms App<br><span class="NF-green">UX</span>
-    <span class="NF-blue">/UI</span></h1>
-  </a></div>
-  <!--Gathering Spot-->
-  <div class="grayscale two-col-2"><a href="GatheringSpot.html"><img class="contentImg money-shot" src="home/Gathering Spot v2.png"/>
-    <h1>Gathering Spot<br><span class="GS-red">UX</span><span class="GS-yellow">/UI</span></h1>
-  </a></div>
+<!-- GATHERING SPOT -->
+<a href="GatheringSpot">
+<div class="Content">
+  <div class="textBox">
+    <h1>Gathering Spot<span class="description">Mobile App Hackathon</span></h1>
+  </div>
+    <img class="contentImgF projImg" src="home/Gathering Spot.png"/>
 </div>
+</a>
 
-<!-- SVG CASE STUDY SEPARATOR -->
-  <svg class="full-width" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 171">
-    <defs>
-      <mask id="shape-mask-2">
-        <rect x="0" y="0" width="800" height="85" fill="#fff"/>
-        <circle class="mask-circle" cx="236.66" r="69.27"/>
-        <circle class="mask-circle" cx="369.5" r="33.7"/>
-        <circle class="mask-circle" cx="464.17" r="21.1"/>
-        <circle class="mask-circle" cx="540.23" r="15.1"/>
-        <circle class="mask-circle" cx="610.29" r="12.3"/>
-      </mask>
-      <mask id="shape-mask-3">
-        <rect x="0" y="85" width="800" height="85"/>
-        <circle class="mask-circle" cx="236.66" r="69.27" fill="#fff"/>
-        <circle class="mask-circle" cx="369.5" r="33.7" fill="#fff"/>
-        <circle class="mask-circle" cx="464.17" r="21.1" fill="#fff"/>
-        <circle class="mask-circle" cx="540.23" r="15.1" fill="#fff"/>
-        <circle class="mask-circle" cx="610.29" r="12.3" fill="#fff"/>
-      </mask>
-      <style>
-      .mask-circle {
-        cy: 85px;
-      }
-        </style>
-      </defs>
-    <!-- SVG SHAPES -->
-    <rect x="0" y="0" width="800" height="85" fill="#fff" mask="url(#shape-mask-2)"/>
-    <rect x="0" y="85" width="800" height="85" fill="#fff" mask="url(#shape-mask-3)"/>
-  </svg>
-
-<!-- SECOND CASE STUDY BLOCK -->
-<div class="full-width no-background one-col">
-      <!--Moon Motorcycles-->
-    <div class="one-col-1 grayscale"><a href="MoonMotorcycles.html"><img class="contentImgF money-shot-desktop" src="home/MoonMotorcyclesv2.png"/>
-      <h1>Moon Motorcycles Website<br><span class="MM-yellow">UX</span></h1>
-    </a></div>
+<!-- COSTCO -->
+<a href="Costco">
+<div class="Content">
+  <div class="textBox">
+    <h1>Costco<span class="description">Mobile App Interactions</span></h1>
   </div>
+    <img class="contentImgF projImg" src="home/Costco.png"/>
+</div>
+</a>
 
-  <!-- THIRD CASE STUDY BLOCK -->
-<div class="full-width background two-col">
-      <!--Costco-->
-    <div class="grayscale two-col-1"><a href="Costco.html"><img class="contentImg money-shot" src="home/Costco v2.png"/>
-      <h1 >Costco App<br><span class="CC-blue">UX</span>
-      <span class="CC-red">/UI</span></h1>
-    </a></div>
-      <!--Hamburger Menu-->
-    <div class="grayscale two-col-2"><a target="_blank" href="https://codepen.io/nate-folsom/pen/GRKEeOw"><img class="contentImg money-shot" src="home/Hamburger.png"/>
-      <h1>Hamburger Menu<br><span class="HM-red">SVG</span><span class="HM-yellow">/CSS</span></h1>
-      </a></div>
+<!-- MOON MOTORCYCLES -->
+<a href="MoonMotorcycles">
+<div class="Content">
+  <div class="textBox">
+    <h1>Moon Motorcycles<span class="description">Website Interactions</span></h1>
   </div>
-
+  <img class="contentImgF projImg" src="home/Moon Motorcycles.png"/>
+</div>
+</a>
+</div>
+<div class="spacer">
+</div>
 <footer>
-  <svg class="full-width footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 100">
-    <defs>
-      <mask id="shape-mask-footer">
-        <rect x="0" y="0" width="800" height="100" fill="#fff"/>
-        <circle class="footer-circle" cx="225" cy="50" r="10"/>
-        <circle class="footer-circle" cx="250" cy="50" r="10"/>
-        <circle class="footer-circle" cx="275" cy="50" r="10"/>
-        <circle class="footer-circle" cx="300" cy="50" r="10"/>
-        <circle class="footer-circle" cx="325" cy="50" r="10"/>
-        <circle class="footer-circle" cx="350" cy="50" r="10"/>
-        <circle class="footer-circle" cx="375" cy="50" r="10"/>
-        <circle class="footer-circle" cx="400" cy="50" r="10"/>
-        <circle class="footer-circle" cx="425" cy="50" r="10"/>
-        <circle class="footer-circle" cx="450" cy="50" r="10"/>
-        <circle class="footer-circle" cx="475" cy="50" r="10"/>
-        <circle class="footer-circle" cx="500" cy="50" r="10"/>
-        <circle class="footer-circle" cx="525" cy="50" r="10"/>
-        <circle class="footer-circle" cx="550" cy="50" r="10"/>
-        <circle class="footer-circle" cx="575" cy="50" r="10"/>
-      </mask>
-      <style>
-
-      </style>
-      </defs>
-    <!-- SVG SHAPES -->
-    <rect x="0" y="0" width="800" height="200" fill="#fff" mask="url(#shape-mask-footer)"/>
-    <text x="225" y="56" fill="#fff" text-anchor="middle">©</text>
-    <text x="250" y="56" fill="#fff" text-anchor="middle">N</text>
-    <text x="275" y="56" fill="#fff" text-anchor="middle">A</text>
-    <text x="300" y="56" fill="#fff" text-anchor="middle">T</text>
-    <text x="325" y="56" fill="#fff" text-anchor="middle">E</text>
-    <text x="350" y="56" fill="#fff" text-anchor="middle">F</text>
-    <text x="375" y="56" fill="#fff" text-anchor="middle">O</text>
-    <text x="400" y="56" fill="#fff" text-anchor="middle">L</text>
-    <text x="425" y="56" fill="#fff" text-anchor="middle">S</text>
-    <text x="450" y="56" fill="#fff" text-anchor="middle">O</text>
-    <text x="475" y="56" fill="#fff" text-anchor="middle">M</text>
-    <text x="500" y="56" fill="#fff" text-anchor="middle">2</text>
-    <text x="525" y="56" fill="#fff" text-anchor="middle">0</text>
-    <text x="550" y="56" fill="#fff" text-anchor="middle">1</text>
-    <text x="575" y="56" fill="#fff" text-anchor="middle">9</text>
-  </svg>
+<p class="footerText">©Nate Folsom 2019</p>
 </footer>
 </div>
+
+<script src="docs/pageBuild.js"></script>
+
 </body>
 </html>

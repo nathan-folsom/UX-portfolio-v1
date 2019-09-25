@@ -1,0 +1,311 @@
+/* NATE FOLSOM UX PORTFOLIO STYLESHEET */
+/*---------------------------------------
+--CONTENTS--
+1.0 - UNIVERSAL HTML FORMATTING
+  BODY
+  HEADINGS
+  TEXT STYLES
+  SPECIAL TEXT
+2.0 - HEADER
+3.0 - CONTENT FORMATTING
+  CONTENT BOX
+  IMAGE FORMATTING
+  CASE STUDY LINKS
+4.0 - FOOTER
+5.0 - PAGE FORMATTING
+6.0 - MEDIA QUERIES
+-----------------------------------------*/
+
+/***1.0 - UNIVERSAL HTML FORMATTING***/
+/* BODY */
+body {
+  background-image: url("siteBackground.png");
+  background-size: contain;
+  background-color: #333;
+  background-attachment: fixed;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+/* HEADINGS */
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+/* TEXT STYLES */
+a {
+  text-decoration: none;
+  color: black;
+}
+p {
+  font-size: 25px;
+}
+/* SPECIAL TEXT */
+.emph {
+  font-weight: bold;
+}
+/* LISTS */
+.tasks {
+  font-size: 25px;
+}
+  .team {
+    list-style-type: none;
+    font-size: 25px;
+    position: relative;
+    left: -40px;
+  }
+
+/***2.0 - HEADER***/
+/* HEADER GENERAL */
+header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background-color: rgba(255,255,255, 1);
+  top: 0px;
+  z-index: 1;
+  border-bottom: 10px black solid;
+  border-top: 10px black solid;
+}
+
+/* NAV BUTTONS */
+  .contactNav, .aboutNav {
+    -webkit-transition: color .25s ease;
+    -o-transition: color .25s ease;
+    transition: color .25s ease;
+    cursor: pointer;
+    display: inline;
+  }
+  .contactNav:hover, .aboutNav:hover {
+    color: #737373;
+  }
+
+/* HEADER FLEX FORMATTING */
+.headerItems {
+  position: relative;
+  top: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+  width: inherit;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/* HEADER TITLES */
+  .UXp {
+    font-size: 140px;
+    display: inline;
+    font-weight: bold;
+    position: relative;
+    top: -2px;
+    cursor: pointer;
+  }
+  .titleName {
+    display: inline;
+    font-size: 80px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+/***3.0 - CONTENT FORMATTING***/
+/* CONTENT BOX */
+  .Content {
+    padding: 10px 10% 20px 60px;
+    margin: 10px 0 10px 2%;
+    float: left;
+    text-align: left;
+    background-color: white;
+    border-radius: 2px;
+    height: auto;
+    z-index: 0;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    -o-transition: transform .5s ease;
+    -webkit-transition: margin .5s ease;
+    -o-transition: margin .5s ease;
+    transition: margin .5s ease;
+  }
+
+/* CONTENT IMAGE FORMATS */
+  .contentImg {
+    min-width: 325px;
+    width: 47%;
+  }
+  .contentImgL {
+    width: 69%;
+  }
+  .contentImgF {
+    width: 100%;
+  }
+  .contentImgS {
+    width: 30%;
+  }
+  .contentImgXS {
+    width: 17%;
+  }
+  .imgRow {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   height: auto;
+   margin: 0 -5px;
+ }
+ .imgCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: -5px 0;
+}
+.colImg {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+  margin: 5px 0;
+}
+ .rowL {
+   width: 100%;
+ }
+ .rowM {
+   width: 50%;
+ }
+ .rowImg {
+   -webkit-box-flex: 1;
+       -ms-flex: 1 1 auto;
+           flex: 1 1 auto;
+   min-width: 0;
+   width: 100%;
+   height: 100%;
+   margin: 0 5px;
+ }
+ .hasBorder {
+   border: 2px black solid;
+   border-radius: 2px;
+ }
+ .left {
+   float: left;
+   margin-right: 10px;
+ }
+ .right {
+   float: right;
+   margin-left: 10px;
+ }
+ .topper {
+   margin-top: 30px;
+ }
+ .wrapped {
+   margin-top: 5px;
+ }
+
+  /* CASE STUDY LINKS */
+  .linksContainer {
+    min-width: 98%;
+    margin: 20px 0 10px 2%;
+    background-color: white;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  .linksContent {
+    min-width: 90%;
+    float: left;
+    text-align: left;
+    margin: 10px 10% 20px 60px;
+    height: auto;
+  }
+  .caseStudyLinks {
+    text-decoration: underline;
+  }
+  .Links {
+    /*padding: 10px 10% 20px 60px;*/
+  }
+
+/***4.0 - FOOTER***/
+    footer {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%;
+      height: 50px;
+      background-color: white;
+      border-top: 5px black solid;
+      border-bottom: 5px black solid;
+    }
+    .footerText {
+      font-size: 20px;
+      position: relative;
+      top: -10px;
+    }
+
+/***5.0 PAGE FORMATTING***/
+  .mainContainer {
+    min-height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contentContainer {
+    margin-left: 8%;
+  }
+  .spacer {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .spacerTop {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    height: 120px;
+  }
+
+
+
+/***6.0 - MEDIA QUERIES***/
+@media only screen and (max-width: 1000px){
+  .Content {
+      padding: 10px 1% 20px 60px;
+      margin: 20px 0 20px 2%;
+    }
+  .titleName {
+      font-size: 50px;
+    }
+  .contentContainer {
+    margin-left: 4%;
+  }
+  }
